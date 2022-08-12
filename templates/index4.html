@@ -37,34 +37,70 @@ div {text-align: center;}
 <h2 >Natural Language Preprocessing </h2>
 
 <!-- Main Input For Receiving Query to our ML -->
-<form action="{{ url_for('index4')}}>
+<form action="{{ url_for('index4')}}"method="get">
 
 <h2>Topic for Project is "Sentimental Analysis of Twitter Dataset: Tesla"</h2>
 <br>
 <h6>Click on Predict Sentiment button</h6>
 <button type="submit" class="btn btn-primary btn-block btn-large">Predict Sentiment</button>
 <br>
+<br>
 </form>
 <br>
 {{ prediction_text }}
 </div>
-<
+<br>
+<br>
 <div class="" style="background-color:blue;" >
 <div class="clearfix">
            
-<div class="col-md-12">
- <center><p style="font-size:25px;color:white;margin-top:20px;">Developed by Sejal Jain, student, Poornima college of Engineering, 2nd year, CS Department</p></center> 
 </div>
 </div>
+ 
+
+
 </div>
 </body>
+
 <br>
-<div style ="text-align:center">
-<a href="/" >Click here to visit home page</a>
 <br>
-<a href="/index2" >Click here for NLP description</a>
-<br>
-<a href="/index3" >Click here for model description</a>
-<br>
-</div>
+<div class="container" >
+   <style>
+       .GFG {
+           background-color:blue;
+           border: 2px solid black;
+           color: white;
+           padding: 5px 10px;
+           text-align: center;
+           display: inline-block;
+           font-size: 20px;
+           margin: 5px 70px;
+           cursor: pointer;
+       }
+   </style>
+   <button class="GFG" 
+   onclick="window.location.href = '/';">
+       Visit Home Page
+   </button>
+   <button class="GFG"
+   onclick="window.location.href = '/index2';">
+        NLP Description
+   </button>
+   <button class="GFG" 
+   onclick="window.location.href = '/index3';">
+        Model Description
+   </button> 
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+        <div class="bg-secondary " style="min-height: 40px;">
+
+            <marquee style=" background-color:blue;color:white; margin-top: 7px;">
+                <h6>Designed and developed by Sejal Jain, Student, 2nd Year, Poornima College of Engineering, 
+                CS Department</h6>
+            </marquee>
+        </div>
+    </div>      
 </html>
