@@ -18,6 +18,11 @@ def index3():
     return render_template('index3.html')
 
 
+@app.route('/aboutus')
+def aboutus():
+    return render_template('aboutus.html')
+
+
 @app.route('/index4',methods=['GET'])
 def index4():
     prediction="Neutral"
