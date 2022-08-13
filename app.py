@@ -21,7 +21,9 @@ def index3():
 @app.route('/aboutus')
 def aboutus():
     return render_template('aboutus.html')
-
+@app.route('/MiniProjects')
+def MiniProjects():
+    return render_template('MiniProjects.html')
 
 @app.route('/index4',methods=['GET'])
 def index4():
